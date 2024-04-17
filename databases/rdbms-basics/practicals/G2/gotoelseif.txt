@@ -1,0 +1,46 @@
+Example of goto 
+DECLARE
+		n number:=0;
+		S number:=0;
+	BEGIN
+		n:=&n;
+		<<S1>>
+		S:=S+n;
+		n:=n+1;
+		If(n<25) then
+		Goto S1;
+		End if;
+		Dbms_output.put_line('the answer is=  '||S);
+		End ;
+		/
+Example of else if ladder
+DECLARE
+			Sub1 number;
+			Sub2 number;
+			Sub3 number;
+			Tot number;
+			Per number(5,2);
+			C varchar2(15);
+		BEGIN
+			Sub1:=&sub1;
+			Sub2:=&sub2;
+			Sub3:=&sub3;
+			Tot:=sub1+sub2+sub3;
+			Per:=tot/3;
+			If(per>70) then
+			C:='distinction';
+			Elsif(per>=60 and per<70) then
+			C:='first';
+			Elsif(per>=50 and per<60) then
+			C:='second';
+			Elsif(per>=35 and per<50) then
+			C:='pass';
+			Else
+			C:='fail';
+			End if;
+			
+			Dbms_output.put_line('total='||tot);
+			Dbms_output.put_line('percentage='||per);
+			Dbms_output.put_line('class='||c);
+			End;
+			/

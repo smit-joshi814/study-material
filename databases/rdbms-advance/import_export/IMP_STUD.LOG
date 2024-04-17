@@ -1,0 +1,10 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing TEST's objects into TEST
+. importing TEST's objects into TEST
+. . importing table                     "STUDENTS"         10 rows imported
+Import terminated successfully without warnings.

@@ -1,0 +1,133 @@
+
+
+SQL> select *from customer where cname like 'C%';
+
+      CNUM CNAME                CITY                     RATING       SNUM      
+---------- -------------------- -------------------- ---------- ----------      
+      2005 CHANDRESH            LONDON                      100       1001      
+      2006 CHAMPAK              SURAT                       300       1007      
+
+SQL> select *from customer where cname like 'A%' or cname like 'B%'
+  2  or cname like 'C%';
+
+      CNUM CNAME                CITY                     RATING       SNUM      
+---------- -------------------- -------------------- ---------- ----------      
+      2005 CHANDRESH            LONDON                      100       1001      
+      2006 CHAMPAK              SURAT                       300       1007      
+
+SQL> select *from orders where amount=null or amount=0;
+
+no rows selected
+
+SQL> select snum,max(amount) from orders group by snum;
+
+      SNUM MAX(AMOUNT)                                                          
+---------- -----------                                                          
+      1003     1713.12                                                          
+      1001     9898.87                                                          
+      1002     5160.45                                                          
+      1007     1098.25                                                          
+      1004      1900.1                                                          
+
+SQL> select count(*)"total orders" from orders where snum=1002 or snum=1007 group by snum;
+
+total orders                                                                    
+------------                                                                    
+           3                                                                    
+           2                                                                    
+
+SQL> select snum,max(amount) from orders where snum=1002 or snum=1007 group by snum;
+
+      SNUM MAX(AMOUNT)                                                          
+---------- -----------                                                          
+      1002     5160.45                                                          
+      1007     1098.25                                                          
+
+SQL> select count(*)"total orders" from orders where odate='10-mar-97';
+
+total orders                                                                    
+------------                                                                    
+           1                                                                    
+
+
+SQL> select sum(amount)"total amount" from orders;
+
+total amount                                                                    
+------------                                                                    
+    26665.37                                                                    
+
+SQL> select avg(amount)"average" from orders;
+
+   average                                                                      
+----------                                                                      
+  2666.537                                                                      
+
+SQL> select count(distinct(snum)) from orders;
+
+COUNT(DISTINCT(SNUM))                                                           
+---------------------                                                           
+                    5                                                           
+
+SQL> select max(amount) from orders group by snum;
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+    1713.12                                                                     
+    9898.87                                                                     
+    5160.45                                                                     
+    1098.25                                                                     
+     1900.1                                                                     
+
+SQL> select max(amount) from orders where odate='10-mar-97' group by snum;
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+     1900.1                                                                     
+
+SQL> select count(city) from customer where city=null;
+
+COUNT(CITY)                                                                     
+-----------                                                                     
+          0                                                                     
+
+SQL> select *from customer where cname like 'G%' order by cname asc;
+
+      CNUM CNAME                CITY                     RATING       SNUM      
+---------- -------------------- -------------------- ---------- ----------      
+      2002 GITA                 ROME                        200       1003      
+      2004 GOVIND               BOMBAY                      300       1002      
+
+SQL> select cnum,min(amount) from orders group by cnum;
+
+      CNUM MIN(AMOUNT)                                                          
+---------- -----------                                                          
+      2001      767.19                                                          
+      2006        4723                                                          
+      2007       18.69                                                          
+      2003     5160.45                                                          
+      2004       75.75                                                          
+      2008     1098.25                                                          
+      2002     1713.12                                                          
+
+7 rows selected.
+
+SQL> select odate,count(snum) from orders group by odate;
+
+ODATE     COUNT(SNUM)                                                           
+--------- -----------                                                           
+06-JUN-99           1                                                           
+05-MAR-97           1                                                           
+15-APR-99           1                                                           
+10-APR-95           1                                                           
+08-MAY-97           1                                                           
+03-MAR-99           1                                                           
+12-MAR-99           1                                                           
+10-MAR-97           1                                                           
+20-MAY-96           1                                                           
+30-MAY-99           1                                                           
+
+10 rows selected.
+
+SQL> soppl off;
+SP2-0042: unknown command "soppl off" - rest of line ignored.
+SQL> spool off;

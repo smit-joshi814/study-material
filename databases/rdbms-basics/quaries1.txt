@@ -1,0 +1,52 @@
+SQL> select *from orders where amount>1000;
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3004    5160.45 12-MAR-99       2003       1002                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+7 rows selected.
+
+SQL> 
+SQL> select sname,city,commition from salesman where city='LONDON' and commition>10;
+
+SNAME                CITY                  COMMITION                            
+-------------------- -------------------- ----------                            
+PIYUSH               LONDON                       12                            
+MITI                 LONDON                       11                            
+
+SQL> select *from customer where not(rating<=100 or city='ROME');
+
+      CNUM CNAME                CITY                     RATING       SNUM      
+---------- -------------------- -------------------- ---------- ----------      
+      2003 LAXIT                SURAT                       200       1002      
+      2004 GOVIND               BOMBAY                      300       1002      
+      2006 CHAMPAK              SURAT                       300       1007      
+      2008 MANOJ                LONDON                      200       1007      
+
+SQL> 
+SQL> select *from orders where amount>1000 and not(snum=1002 and odate='12-mar-1999');
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+6 rows selected.
+
+SQL> select * from orders where odate='3-mar-1999' or odate='4-mar-1999' or odate='6-mar-1999';
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3001      18.69 03-MAR-99       2007       1007                           
+
+SQL> spool off;

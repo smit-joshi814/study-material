@@ -1,0 +1,50 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Mar 16 08:11:57 2022
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   D:\load.ctl
+Data File:      D:\load.ctl
+  Bad File:     D:\bad.bad
+  Discard File: D:\dis.disc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table STUD, loaded when CITY = 0X4445455341(character 'DEESA')
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+S_NO                                FIRST     *   ,  O(") CHARACTER            
+NAME                                 NEXT     *   ,  O(") CHARACTER            
+CITY                                 NEXT     *   ,  O(") CHARACTER            
+
+Record 3: Discarded - failed all WHEN clauses.
+Record 4: Discarded - failed all WHEN clauses.
+
+Table STUD:
+  2 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  2 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        2
+
+Run began on Wed Mar 16 08:11:57 2022
+Run ended on Wed Mar 16 08:11:57 2022
+
+Elapsed time was:     00:00:00.05
+CPU time was:         00:00:00.03

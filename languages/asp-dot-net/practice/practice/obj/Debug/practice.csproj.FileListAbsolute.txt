@@ -1,0 +1,6 @@
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\bin\Debug\practice.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\bin\Debug\practice.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\bin\Debug\practice.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\obj\Debug\practice.csprojResolveAssemblyReference.cache
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\obj\Debug\practice.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\practice\practice\obj\Debug\practice.pdb

@@ -1,0 +1,28 @@
+ declare 
+ no number;
+ no2 number;
+ no3 number;
+ begin
+ no:=&no;
+ no2:=&no2;
+ no3:=&no3;
+ 
+ if(no>no2) then
+     if(no>no3) then
+       
+         dbms_output.put_line(no || ' Is maximum number');
+       
+	end if;
+ else
+     if(no2>no3) then
+       
+         dbms_output.put_line(no2 || ' is maximum number ');
+        
+     else
+        
+          dbms_output.put_line(no3 || '  is maximum number ');
+ end if;
+end if;
+
+ end ;
+ /

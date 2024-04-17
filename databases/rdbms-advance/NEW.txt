@@ -1,0 +1,53 @@
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE SEQUENCE CUST
+  2  START WITH 1
+  3* INCREMENT BY 1
+SQL> /
+
+Sequence created.
+
+SQL> DESC CUSTOMER;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CNO                                       NOT NULL NUMBER(1)
+ CNAME                                              VARCHAR2(10)
+ CITY                                               VARCHAR2(10)
+ PIN                                                NUMBER(6)
+
+SQL> INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'&CNAME','&CITY',&PIN);
+Enter value for cname: SMIT
+Enter value for city: DEESA
+Enter value for pin: 385535
+old   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'&CNAME','&CITY',&PIN)
+new   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'SMIT','DEESA',385535)
+
+1 row created.
+
+SQL> /
+Enter value for cname: ISHA
+Enter value for city: DEESA
+Enter value for pin: 385535
+old   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'&CNAME','&CITY',&PIN)
+new   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'ISHA','DEESA',385535)
+
+1 row created.
+
+SQL> /
+Enter value for cname: VJ233
+Enter value for city: DEESA
+Enter value for pin: 385535
+old   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'&CNAME','&CITY',&PIN)
+new   1: INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'VJ233','DEESA',385535)
+INSERT INTO CUSTOMER VALUES(CUST.NEXTVAL,'VJ233','DEESA',385535)
+                            *
+ERROR at line 1:
+ORA-04045: errors during recompilation/revalidation of SYSTEM.ERR
+ORA-01031: insufficient privileges
+ORA-20780: PLEASE ENTER VALID NAME
+ORA-06512: at "SJ.CHK_NAME", line 20
+ORA-04088: error during execution of trigger 'SJ.CHK_NAME'
+
+
+SQL>

@@ -1,0 +1,95 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export selected tablespaces ...
+For tablespace USERS ...
+. exporting cluster definitions
+. exporting table definitions
+. . exporting table                      COUNTRIES         25 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    DEPARTMENTS         27 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      EMPLOYEES        107 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           JOBS         19 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    JOB_HISTORY         10 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      LOCATIONS         23 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                        REGIONS          4 rows exported
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          BONUS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          CDATE          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           COMM          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       CUSTOMER         15 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       CUST_SPY         17 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      DAY_TOTAL         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    LONDONSTAFF          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          MARKS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      MULTICUST          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                     MULTICUST1          3 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         ORDERS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         RESULT         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          SALES          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       SALESMAN          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                   SALESMANAGER          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         SMCITY          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           STUD         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           TEST         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                        TESTADD          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          BONUS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         ORDERS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       SALESMAN          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. exporting referential integrity constraints
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+EXP-00091: Exporting questionable statistics.
+. exporting triggers
+Export terminated successfully with warnings.

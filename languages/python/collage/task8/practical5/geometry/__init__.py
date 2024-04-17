@@ -1,0 +1,1 @@
+from . import circle,rectangle,triangle

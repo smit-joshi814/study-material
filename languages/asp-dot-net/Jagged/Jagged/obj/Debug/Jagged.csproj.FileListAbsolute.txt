@@ -1,0 +1,12 @@
+F:\SMIT\Jagged\Jagged\bin\Debug\Jagged.exe.config
+F:\SMIT\Jagged\Jagged\bin\Debug\Jagged.exe
+F:\SMIT\Jagged\Jagged\bin\Debug\Jagged.pdb
+F:\SMIT\Jagged\Jagged\obj\Debug\Jagged.csprojResolveAssemblyReference.cache
+F:\SMIT\Jagged\Jagged\obj\Debug\Jagged.exe
+F:\SMIT\Jagged\Jagged\obj\Debug\Jagged.pdb
+F:\DOTNET\Jagged\Jagged\bin\Debug\Jagged.exe.config
+F:\DOTNET\Jagged\Jagged\obj\Debug\Jagged.exe
+F:\DOTNET\Jagged\Jagged\obj\Debug\Jagged.pdb
+F:\DOTNET\Jagged\Jagged\bin\Debug\Jagged.exe
+F:\DOTNET\Jagged\Jagged\bin\Debug\Jagged.pdb
+F:\DOTNET\Jagged\Jagged\obj\Debug\Jagged.csprojResolveAssemblyReference.cache

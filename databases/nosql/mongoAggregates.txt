@@ -1,0 +1,47 @@
+db.emp.aggregate({
+$group:{_id:"$name",
+combined_sal:{$push:"$salary"}
+}
+})
+
+db.emp.aggregate({
+$group:{_id:"$name",
+combined_sal:{$addToSet:"$salary"}
+}
+})
+
+
+db.emp.aggregate({
+$group:{_id:"$name",
+combined_sal:{$first:"$salary"}
+}
+})
+
+db.emp.aggregate({
+$group:{_id:"$name",
+combined_sal:{$last:"$salary"}
+}
+})
+
+
+minimum 5 Records
+
+Student database:
+S_name
+S_roll_no
+NoSQL
+Python
+OOAD
+CCV
+DAA
+Custom field:[Array]
+
+student_Marks_Total
+avg
+min
+max
+push
+addToSet
+first
+last
+

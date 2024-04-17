@@ -1,0 +1,37 @@
+create or replace procedure pr9(uname IN varchar2,cmd IN varchar2) is
+	
+	C Number(2);
+
+
+	begin	
+
+	select count(*) into c from system.product_user_PROFILE where userid=upper(uname) and attribute=upper(cmd);
+	if(c=0) then
+		
+			Insert into SYSTEM.product_user_profile values('SQL*PLUS',UNAME,CMD,NULL,NULL,'DISABLED',NULL,NULL); 
+			dbms_output.put_line('Success');
+		
+
+		else   
+
+	
+		delete from system.product_USER_PROFILE where userid=upper(uname) and attribute=upper(cmd);
+	
+	END IF;
+	
+	
+END PR9;
+
+
+
+		
+
+ ----------------------------------------------------------------------------------------- -------- 
+ PRODUCT                                                                                   NOT NULL VARCHAR2(30)
+ USERID                                                                                             VARCHAR2(30)
+ ATTRIBUTE                                                                                          VARCHAR2(240)
+ SCOPE                                                                                              VARCHAR2(240)
+ NUMERIC_VALUE                                                                                      NUMBER(15,2)
+ CHAR_VALUE                                                                                         VARCHAR2(240)
+ DATE_VALUE                                                                                         DATE
+ LONG_VALUE                                                                                         LONG

@@ -1,0 +1,546 @@
+[
+  [
+    {
+      "Book_Code": "1",
+      "Book_name": "Head First Design Patterns",
+      "Author": [
+        "Eric Freeman",
+        "Elisabeth Robson",
+        "Bert bates",
+        "Kathy Sierra"
+      ],
+      "Publisher_name": "O'Reilly Media",
+      "Year_Of_Publication": "2020",
+      "type_of_book": "Textbook",
+      "Cost": 2878
+    },
+    {
+      "Book_Code": "2",
+      "Book_name": "Data Structures And Algorithms in Python,3rd Edition",
+      "Author": [
+        "Michael T.Goodrich",
+        "Roberto Tamassia",
+        "Michael H.Goldwasser"
+      ],
+      "Publisher_name": "Peasron",
+      "Year_Of_Publication": "2020",
+      "type_of_book": "Textbook",
+      "Cost": 350
+    },
+    {
+      "Book_Code": "3",
+      "Book_name": "The Elements of Style",
+      "Author": [
+        "William Strunk Jr.",
+        "E.B. White"
+      ],
+      "Publisher_name": "Allyn & Bacon",
+      "Year_Of_Publication": "2018",
+      "type_of_book": "Reference",
+      "Cost": 1072
+    },
+    {
+      "Book_Code": "4",
+      "Book_name": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+      "Author": [
+        "Gayle Laakmann McDowell"
+      ],
+      "Publisher_name": "CareerCup",
+      "Year_Of_Publication": "2020",
+      "type_of_book": "Reference",
+      "Cost": 2313
+    },
+    {
+      "Book_Code": "5",
+      "Book_name": "The Economist: The World in 2023",
+      "Author": [
+        "The Economist"
+      ],
+      "Publisher_name": "The Economist",
+      "Year_Of_Publication": "2022",
+      "type_of_book": "Periodicals",
+      "Cost": 879
+    },
+    {
+      "Book_Code": "6",
+      "Book_name": "Scientific American: 50th Anniversary Edition",
+      "Author": [
+        "Scientific American"
+      ],
+      "Publisher_name": "Scientific American",
+      "Year_Of_Publication": "2022",
+      "type_of_book": "Periodicals",
+      "Cost": 1623
+    }
+  ],
+  [
+    {
+      "Model_id": "1",
+      "Model_name": "Rav4",
+      "Brand_name": "Toyota",
+      "Type_of_car": "SUV",
+      "Dimensions": {
+        "color": "Blue",
+        "height": "68 inches",
+        "width": "73 inches",
+        "weight": 1588
+      },
+      "Price_on_road": 2250000
+    },
+    {
+      "Model_id": "2",
+      "Model_name": "Civic",
+      "Brand_name": "Honda",
+      "Type_of_car": "Sedan",
+      "Dimensions": {
+        "color": "Silver",
+        "height": "57 inches",
+        "width": "70 inches",
+        "weight": 1270
+      },
+      "Price_on_road": 1875000
+    },
+    {
+      "Model_id": "3",
+      "Model_name": "X5",
+      "Brand_name": "BMW",
+      "Type_of_car": "XUV",
+      "Dimensions": {
+        "color": "Black",
+        "height": "68 inches",
+        "width": "76 inches",
+        "weight": 1905
+      },
+      "Price_on_road": 3375000
+    },
+    {
+      "Model_id": "4",
+      "Model_name": "Mustang",
+      "Brand_name": "Ford",
+      "Type_of_car": "Sedan",
+      "Dimensions": {
+        "color": "Red",
+        "height": "54 inches",
+        "width": "75 inches",
+        "weight": 1451
+      },
+      "Price_on_road": 2625000
+    },
+    {
+      "Model_id": "5",
+      "Model_name": "Model 3",
+      "Brand_name": "Tesla",
+      "Type_of_car": "Motor",
+      "Dimensions": {
+        "color": "White",
+        "height": "56 inches",
+        "width": "73 inches",
+        "weight": 1588
+      },
+      "Price_on_road": 3750000
+    },
+    {
+      "Model_id": "6",
+      "Model_name": "Creta",
+      "Brand_name": "Hyundai",
+      "Type_of_car": "SUV",
+      "Dimensions": {
+        "color": "Grey",
+        "height": "65 inches",
+        "width": "70 inches",
+        "weight": 1361
+      },
+      "Price_on_road": 1580000
+    },
+    {
+      "Model_id": "7",
+      "Model_name": "Verna",
+      "Brand_name": "Hyundai",
+      "Type_of_car": "Sedan",
+      "Dimensions": {
+        "color": "White",
+        "height": "56 inches",
+        "width": "69 inches",
+        "weight": 1315
+      },
+      "Price_on_road": 1450000
+    },
+    {
+      "Model_id": "8",
+      "Model_name": "Alto",
+      "Brand_name": "Maruti Suzuki",
+      "Type_of_car": "Hatchback",
+      "Dimensions": {
+        "color": "Red",
+        "height": "53 inches",
+        "width": "58 inches",
+        "weight": 725
+      },
+      "Price_on_road": 550000
+    },
+    {
+      "Model_id": "9",
+      "Model_name": "Kwid",
+      "Brand_name": "Renault",
+      "Type_of_car": "Hatchback",
+      "Dimensions": {
+        "color": "White",
+        "height": "55 inches",
+        "width": "59 inches",
+        "weight": 816
+      },
+      "Price_on_road": 620000
+    },
+    {
+      "Model_id": "10",
+      "Model_name": "Santro",
+      "Brand_name": "Hyundai",
+      "Type_of_car": "Hatchback",
+      "Dimensions": {
+        "color": "Blue",
+        "height": "56 inches",
+        "width": "63 inches",
+        "weight": 862
+      },
+      "Price_on_road": 680000
+    },
+    {
+      "Model_id": "11",
+      "Model_name": "Tucson",
+      "Brand_name": "Hyundai",
+      "Type_of_car": "SUV",
+      "Dimensions": {
+        "color": "Black",
+        "height": "67 inches",
+        "width": "73 inches",
+        "weight": 1950
+      },
+      "Price_on_road": 2890000
+    },
+    {
+      "Model_id": "012",
+      "Model_name": "Creta Plus",
+      "Brand_name": "Hyundai",
+      "Type_of_car": "SUV",
+      "Dimensions": {
+        "color": "Black",
+        "height": "66 inches",
+        "width": "72 inches",
+        "weight": 1588
+      },
+      "Price_on_road": 1050000
+    }
+  ],
+  [
+    {
+      "product_id": 1,
+      "product_name": "Pencil",
+      "product_type": [
+        "Stationary"
+      ],
+      "cost_unit": 50,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 2,
+      "product_name": "Notebook",
+      "product_type": [
+        "Stationary"
+      ],
+      "cost_unit": 100,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 3,
+      "product_name": "Laptop",
+      "product_type": [
+        "Electronics"
+      ],
+      "cost_unit": 60000,
+      "qty_in_stock": 20
+    },
+    {
+      "product_id": 4,
+      "product_name": "Tablet",
+      "product_type": [
+        "Electronics",
+        "Computer"
+      ],
+      "cost_unit": 40000,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 5,
+      "product_name": "Chair",
+      "product_type": [
+        "Home Decor"
+      ],
+      "cost_unit": 5000,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 6,
+      "product_name": "Book",
+      "product_type": [
+        "Stationary",
+        "Literature"
+      ],
+      "cost_unit": 300,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 7,
+      "product_name": "Mobile Phone",
+      "product_type": [
+        "Electronics"
+      ],
+      "cost_unit": 10000,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 8,
+      "product_name": "Sofa",
+      "product_type": [
+        "Home Decor"
+      ],
+      "cost_unit": 10000,
+      "qty_in_stock": 100
+    }
+  ],
+  [
+    {
+      "tour_code": 1,
+      "tour_codename": "Ladakh Tour",
+      "source_station": "Leh",
+      "destination_station": "Srinagar, Manali",
+      "type_of_package": [
+        "pilgrimage",
+        "group"
+      ],
+      "category": "Premium",
+      "total_fare": 150000,
+      "total_kms_covered": 4000
+    },
+    {
+      "tour_code": 2,
+      "tour_codename": "Kashmir Tour",
+      "source_station": "Srinagar",
+      "destination_station": "Pahalgam, Gulmarg, Sonmarg",
+      "type_of_package": [
+        "romantic",
+        "group"
+      ],
+      "category": "Deluxe",
+      "total_fare": 95000,
+      "total_kms_covered": 3500
+    },
+    {
+      "tour_code": 3,
+      "tour_codename": "North East Tour",
+      "source_station": "Guwahati",
+      "destination_station": "Shillong, Cherrapunji, Kaziranga",
+      "type_of_package": [
+        "group"
+      ],
+      "category": "Normal",
+      "total_fare": 70000,
+      "total_kms_covered": 2000
+    },
+    {
+      "tour_code": 4,
+      "tour_codename": "Kerala Hill Stations Tour",
+      "source_station": "Trivandrum",
+      "destination_station": "Munnar, Thekkady, Kovalam",
+      "type_of_package": [
+        "group"
+      ],
+      "category": "Normal",
+      "total_fare": 65000,
+      "total_kms_covered": 1800
+    },
+    {
+      "tour_code": 5,
+      "tour_codename": "Tamil Nadu Tour",
+      "source_station": "Chennai",
+      "destination_station": "Madurai, Trichy, Pondicherry",
+      "type_of_package": [
+        "group"
+      ],
+      "category": "Normal",
+      "total_fare": 55000,
+      "total_kms_covered": 1500
+    },
+    {
+      "tour_code": 6,
+      "tour_codename": "Andhra Pradesh Tour",
+      "source_station": "Hyderabad",
+      "destination_station": "Tirupati, Vijayawada, Hampi",
+      "type_of_package": [
+        "group"
+      ],
+      "category": "Normal",
+      "total_fare": 45000,
+      "total_kms_covered": 1200
+    },
+    {
+      "tour_code": 7,
+      "tour_codename": "Karnataka Tour",
+      "source_station": "Bangalore",
+      "destination_station": "Mysore, Hampi, Coorg",
+      "type_of_package": [
+        "group"
+      ],
+      "category": "Normal",
+      "total_fare": 25000,
+      "total_kms_covered": 1000
+    }
+  ],
+  [
+    {
+      "model_id": 1,
+      "model_name": "Rolex Submariner",
+      "brand_name": "Rolex",
+      "type_of_dial": "analog",
+      "dimension": { "height": 12, "width": 40, "weight": 150 },
+      "price": 66040
+    },
+    {
+      "model_id": 2,
+      "model_name": "Omega Speedmaster",
+      "brand_name": "Omega",
+      "type_of_dial": "analog",
+      "dimension": { "height": 10, "width": 38, "weight": 120 },
+      "price": 50530
+    },
+    {
+      "model_id": 3,
+      "model_name": "Seiko Prospex",
+      "brand_name": "Seiko",
+      "type_of_dial": "analog",
+      "dimension": { "height": 11, "width": 42, "weight": 130 },
+      "price": 33020
+    },
+    {
+      "model_id": 4,
+      "model_name": "Casio G-Shock",
+      "brand_name": "Casio",
+      "type_of_dial": "digital",
+      "dimension": { "height": 10, "width": 43, "weight": 100 },
+      "price": 16510
+    },
+    {
+      "model_id": 5,
+      "model_name": "Timex Ironman",
+      "brand_name": "Timex",
+      "type_of_dial": "digital",
+      "dimension": { "height": 9, "width": 36, "weight": 80 },
+      "price": 8255
+    },
+    {
+      "model_id": 6,
+      "model_name": "Fossil Grant Chronograph FS4810",
+      "brand_name": "Fossil",
+      "type_of_dial": "chronograph",
+      "dimension": { "height": 12, "width": 44, "weight": 120 },
+      "price": 247647
+    },
+    {
+      "model_id": 7,
+      "model_name": "Fossil Townsman Chronograph FS5433",
+      "brand_name": "Fossil",
+      "type_of_dial": "chronograph",
+      "dimension": { "height": 11, "width": 42, "weight": 100 },
+      "price": 206375
+    },
+    {
+      "model_id": 8,
+      "model_name": "Orient Bambino Ver. 2",
+      "brand_name": "Orient",
+      "type_of_dial": "analog",
+      "dimension": { "height": 12, "width": 40, "weight": 110 },
+      "price": 16510
+    },
+    {
+      "model_id": 9,
+      "model_name": "Citizen Eco-Drive Promaster Diver",
+      "brand_name": "Citizen",
+      "type_of_dial": "analog",
+      "dimension": { "height": 13, "width": 44, "weight": 160 },
+      "price": 247647
+    }
+  ],
+ 
+
+  [
+    {
+      "product_id": 1,
+      "product_name": "Pencil",
+      "product_type": "Stationary",
+      "cost_unit": 9,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 2,
+      "product_name": "Notebook",
+      "product_type": "Stationary",
+      "cost_unit": 59,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 3,
+      "product_name": "Laptop",
+      "product_type": "Electronics",
+      "cost_unit": 30999,
+      "qty_in_stock": 20
+    },
+    {
+      "product_id": 4,
+      "product_name": "Tablet",
+      "product_type": "Electronics",
+      "cost_unit": 38999,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 5,
+      "product_name": "Chair",
+      "product_type": "Furniture",
+      "cost_unit": 2999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 6,
+      "product_name": "Book",
+      "product_type": "Stationary",
+      "cost_unit": 299,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 7,
+      "product_name": "Mobile Phone",
+      "product_type": "Electronics",
+      "cost_unit": 29599,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 8,
+      "product_name": "Sofa",
+      "product_type": "Home Decor",
+      "cost_unit": 7999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 9,
+      "product_name": "Bed",
+      "product_type": "Furniture",
+      "cost_unit": 8999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 10,
+      "product_name": "Headphones",
+      "product_type": "Electronics",
+      "cost_unit": 1599,
+      "qty_in_stock": 100
+    }
+  ]
+]

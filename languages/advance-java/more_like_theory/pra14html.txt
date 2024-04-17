@@ -1,0 +1,14 @@
+
+<html>
+    <head>
+        <title>Session try</title>
+    <body>
+        <form method="post" action="pra14_1.jsp">
+            <p> Enter Your Name : 
+                <input type="text" name="txtsname"></p>
+            <hr color="red" size=5>
+            <input type="submit" value="Next Page..">
+            
+        </form>
+    </body>
+</html>

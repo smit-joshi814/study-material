@@ -1,0 +1,23 @@
+DECLARE
+No1 number;
+No2 number;
+No3 number;
+BEGIN
+No1:=&No1;
+No2:=&No2;
+No3:=&No3;
+if(No1>No2) then
+	if(No1>No3) then
+		  dbms_output.put_line(No1||'  is biggest one  ');
+	else
+		  dbms_output.put_line(No3 ||' is biggest one  ');
+	end if;
+else
+	if(No2>No3) then
+		  dbms_output.put_line(No2 ||' is biggest one  ');
+	else
+		  dbms_output.put_line(No3 ||' is biggest one  ');	
+	end if;
+end if;
+end;
+/

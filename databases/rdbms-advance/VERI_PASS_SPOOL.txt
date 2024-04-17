@@ -1,0 +1,135 @@
+SQL> select ASCII('A') from dual;
+
+ASCII('A')                                                                      
+----------                                                                      
+        65                                                                      
+
+SQL> select ASCII('Z') from dual;
+
+ASCII('Z')                                                                      
+----------                                                                      
+        90                                                                      
+
+SQL> select ASCII('a') from dual;
+
+ASCII('A')                                                                      
+----------                                                                      
+        97                                                                      
+
+SQL> select ASCII('z') from dual;
+
+ASCII('Z')                                                                      
+----------                                                                      
+       122                                                                      
+
+SQL> select ASCII(0) from dual;
+
+  ASCII(0)                                                                      
+----------                                                                      
+        48                                                                      
+
+SQL> select ASCII(9) from dual;
+
+  ASCII(9)                                                                      
+----------                                                                      
+        57                                                                      
+
+SQL> select ASCII('*') from dual;
+
+ASCII('*')                                                                      
+----------                                                                      
+        42                                                                      
+
+SQL> select ASCII('_') from dual;
+
+ASCII('_')                                                                      
+----------                                                                      
+        95                                                                      
+
+SQL> select ASCII('+') from dual;
+
+ASCII('+')                                                                      
+----------                                                                      
+        43                                                                      
+
+SQL> select ASCII('~') from dual;
+
+ASCII('~')                                                                      
+----------                                                                      
+       126                                                                      
+
+SQL> select ASCII('`') from dual;
+
+ASCII('`')                                                                      
+----------                                                                      
+        96                                                                      
+
+SQL> select ASCII('!') from dual;
+
+ASCII('!')                                                                      
+----------                                                                      
+        33                                                                      
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE FUNCTION VERI_PASS(Chk_Pass VARCHAR2) RETURN VARCHAR2 IS
+  2  LEN NUMBER;
+  3  I NUMBER;
+  4  CAP NUMBER;
+  5  CH VARCHAR2(1);
+  6  SM NUMBER;
+  7  DIG NUMBER;
+  8  SP NUMBER;
+  9  BEGIN
+ 10          LEN:=LENGTH(Chk_Pass);
+ 11          IF( LEN < 8 OR LEN > 16 ) THEN
+ 12                  RETURN 'FALSE';
+ 13          ELSE
+ 14                  CAP:=0;
+ 15                  SM:=0;
+ 16                  DIG:=0;
+ 17                  SP:=0;
+ 18                  FOR I IN 1..LEN
+ 19                  LOOP
+ 20                          CH:=SUBSTR(Chk_Pass,I,1);
+ 21                          IF (ASCII(CH) >=65 AND ASCII(CH) <=90) THEN
+ 22                                  CAP:=CAP+1;
+ 23                          ELSIF (ASCII(CH) >=97 AND ASCII(CH) <=122) THEN
+ 24                                  SM:=SM+1;
+ 25                          ELSIF ( ASCII(CH) >=48 AND ASCII(CH) <=57 ) THEN
+ 26                                  DIG:=DIG+1;
+ 27                          ELSIF( ASCII(CH) = 42 OR ASCII(CH) = 95 OR ASCII(CH) = 43 OR ASCII(CH) = 126OR ASCII(CH)=32 OR ASCII(CH) = 96 OR ASCII(CH)= 33 ) THEN
+ 28  					 SP:=SP+1;
+ 29                          END IF;
+ 30                  END LOOP;
+ 31                  IF( CAP > 0 AND SM > 0 AND DIG > 0 AND SP > 0 ) THEN
+ 32                          RETURN 'TRUE';
+ 33                  ELSE
+ 34                          RETURN 'FALSE';
+ 35                  END IF;
+ 36          END IF;
+ 37* END VERI_PASS;
+SQL> /
+
+Function created.
+
+SQL> SET SERVEROUTPUT ON;
+SQL> ED
+Wrote file afiedt.buf
+
+  1  DECLARE
+  2  PASS VARCHAR2(16);
+  3  BEGIN
+  4  PASS:='&PASS';
+  5  DBMS_OUTPUT.PUT_LINE(VERI_PASS(PASS));
+  6* END;
+  7  /
+Enter value for pass: Smit_123
+old   4: PASS:='&PASS';
+new   4: PASS:='Smit_123';
+TRUE                                                                            
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off;

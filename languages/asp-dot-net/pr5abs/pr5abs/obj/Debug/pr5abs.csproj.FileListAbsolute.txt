@@ -1,0 +1,8 @@
+F:\SMIT\pr5abs\pr5abs\bin\Debug\pr5abs.exe.config
+F:\SMIT\pr5abs\pr5abs\bin\Debug\pr5abs.exe
+F:\SMIT\pr5abs\pr5abs\bin\Debug\pr5abs.pdb
+F:\SMIT\pr5abs\pr5abs\obj\Debug\pr5abs.exe
+F:\SMIT\pr5abs\pr5abs\obj\Debug\pr5abs.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5abs\pr5abs\bin\Debug\pr5abs.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5abs\pr5abs\obj\Debug\pr5abs.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5abs\pr5abs\obj\Debug\pr5abs.pdb

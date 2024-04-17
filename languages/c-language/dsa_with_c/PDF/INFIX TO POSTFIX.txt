@@ -1,0 +1,29 @@
+CONVERT TO POSTFIX
+
+A^B*C-D+E/F/(G+H)
+
+in 	op stack	 result
+A		A
+^	^	A
+B	^	AB
+*	pop(^);
+	push(*);	A^B
+C	*	A^BC
+-	*-	A^BC
+D	-	A^BC*D
++	
+	pop(-);
+	push(+);	A^BC*D-
+E	+	A^BC*D-E
+/	+/	A^BC*D-E
+F	+/	A^BC*D-EF
+/	+
+	pop(/);
+	push(/);	A^BC*D-EF/
+(	+/(	A^BC*D-EF/
+G	+/(	A^BC*D-EF/G
++	+/(+	A^BC*D-EF/G
+H	+/(+	A^BC*D-EF/GH
+)	pop(+);	A^BC*D-EF/GH+
+	pop(/,+)	A^B*CD-EF/GH+/+
+

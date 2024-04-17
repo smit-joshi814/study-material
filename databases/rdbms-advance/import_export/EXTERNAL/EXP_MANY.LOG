@@ -1,0 +1,69 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user SMIT 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user SMIT 
+About to export SMIT's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export SMIT's tables via Conventional Path ...
+. . exporting table                          BONUS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          CDATE          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           COMM          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       CUSTOMER         15 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       CUST_SPY         17 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      DAY_TOTAL         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    LONDONSTAFF          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          MARKS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      MULTICUST          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                     MULTICUST1          3 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         ORDERS         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         RESULT         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          SALES          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       SALESMAN          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                   SALESMANAGER          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                         SMCITY          0 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           STUD         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                           TEST         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                        TESTADD          2 rows exported
+EXP-00091: Exporting questionable statistics.
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully with warnings.

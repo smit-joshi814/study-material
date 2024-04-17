@@ -1,0 +1,14 @@
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <% 
+            String sname=request.getParameter("txtsname");
+            session.setAttribute("name",sname);
+        %>
+    <body>
+        <p>Page 1</p>
+        <p><a href="pra14_2.jsp">Click Hear..!</a></p>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+
+Warning: the objects were exported by SMIT, not by you
+
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing SMIT's objects into DEMO
+. . importing table                        "BONUS"         10 rows imported
+IMP-00015: following statement failed because the object already exists:
+ "CREATE TABLE "CUSTOMER" ("CNUM" NUMBER(4, 0), "CNAME" CHAR(20), "CITY" CHAR"
+ "(20), "RATING" NUMBER(3, 0), "SNUM" NUMBER(4, 0))  PCTFREE 10 PCTUSED 40 IN"
+ "ITRANS 1 MAXTRANS 255 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREEL"
+ "ISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)                    LOGGING NO"
+ "COMPRESS"
+. . importing table                       "ORDERS"         10 rows imported
+. . importing table                     "SALESMAN"          8 rows imported
+Import terminated successfully with warnings.

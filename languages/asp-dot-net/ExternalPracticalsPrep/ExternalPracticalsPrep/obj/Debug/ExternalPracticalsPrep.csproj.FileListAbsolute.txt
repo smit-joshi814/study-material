@@ -1,0 +1,6 @@
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\bin\Debug\ExternalPracticalsPrep.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\bin\Debug\ExternalPracticalsPrep.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\bin\Debug\ExternalPracticalsPrep.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\obj\Debug\ExternalPracticalsPrep.csprojResolveAssemblyReference.cache
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\obj\Debug\ExternalPracticalsPrep.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\ExternalPracticalsPrep\ExternalPracticalsPrep\obj\Debug\ExternalPracticalsPrep.pdb

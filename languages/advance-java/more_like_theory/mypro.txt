@@ -1,0 +1,5 @@
+SQL> create or replace procedure MyPro(n number,na varchar2) as
+  2  begin
+  3  insert into stud values(n,na);
+  4  end;
+  5  /

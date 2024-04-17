@@ -1,0 +1,11 @@
+DECLARE
+No number;
+BEGIN
+No:=&No;
+if(No>0) then
+  dbms_output.put_line(No ||' is Postive  ');
+else
+  dbms_output.put_line(No ||' is Negative ');
+end if;
+end;
+/

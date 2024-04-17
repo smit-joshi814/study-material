@@ -1,0 +1,141 @@
+SQL> EXECUTE GETVOWE('smit');
+TABLE NAME---> 		LONDONSTAFF                                                    
+TABLE LENGTH->		11                                                              
+------------------------------                                                  
+A IN LONDONSTAFF 1 TIMES                                                        
+E IN LONDONSTAFF 1 TIMES                                                        
+I IN LONDONSTAFF 0 TIMES                                                        
+O IN LONDONSTAFF 0 TIMES                                                        
+U IN LONDONSTAFF 0 TIMES                                                        
+TABLE NAME---> 		DAY_TOTAL                                                      
+TABLE LENGTH->		9                                                               
+------------------------------                                                  
+A IN DAY_TOTAL 2 TIMES                                                          
+E IN DAY_TOTAL 1 TIMES                                                          
+I IN DAY_TOTAL 0 TIMES                                                          
+O IN DAY_TOTAL 0 TIMES                                                          
+U IN DAY_TOTAL 0 TIMES                                                          
+TABLE NAME---> 		MULTICUST                                                      
+TABLE LENGTH->		9                                                               
+------------------------------                                                  
+A IN MULTICUST 0 TIMES                                                          
+E IN MULTICUST 1 TIMES                                                          
+I IN MULTICUST 0 TIMES                                                          
+O IN MULTICUST 0 TIMES                                                          
+U IN MULTICUST 0 TIMES                                                          
+TABLE NAME---> 		SALESMANAGER                                                   
+TABLE LENGTH->		12                                                              
+------------------------------                                                  
+A IN SALESMANAGER 3 TIMES                                                       
+E IN SALESMANAGER 2 TIMES                                                       
+I IN SALESMANAGER 0 TIMES                                                       
+O IN SALESMANAGER 0 TIMES                                                       
+U IN SALESMANAGER 0 TIMES                                                       
+TABLE NAME---> 		SMCITY                                                         
+TABLE LENGTH->		6                                                               
+------------------------------                                                  
+A IN SMCITY 0 TIMES                                                             
+E IN SMCITY 1 TIMES                                                             
+I IN SMCITY 0 TIMES                                                             
+O IN SMCITY 0 TIMES                                                             
+U IN SMCITY 0 TIMES                                                             
+TABLE NAME---> 		BONUS                                                          
+TABLE LENGTH->		5                                                               
+------------------------------                                                  
+A IN BONUS 0 TIMES                                                              
+E IN BONUS 1 TIMES                                                              
+I IN BONUS 0 TIMES                                                              
+O IN BONUS 0 TIMES                                                              
+U IN BONUS 0 TIMES                                                              
+TABLE NAME---> 		MULTICUST1                                                     
+TABLE LENGTH->		10                                                              
+------------------------------                                                  
+A IN MULTICUST1 0 TIMES                                                         
+E IN MULTICUST1 1 TIMES                                                         
+I IN MULTICUST1 0 TIMES                                                         
+O IN MULTICUST1 0 TIMES                                                         
+U IN MULTICUST1 0 TIMES                                                         
+TABLE NAME---> 		SALES                                                          
+TABLE LENGTH->		5                                                               
+------------------------------                                                  
+A IN SALES 1 TIMES                                                              
+E IN SALES 1 TIMES                                                              
+I IN SALES 0 TIMES                                                              
+O IN SALES 0 TIMES                                                              
+U IN SALES 0 TIMES                                                              
+TABLE NAME---> 		COMM                                                           
+TABLE LENGTH->		4                                                               
+------------------------------                                                  
+A IN COMM 0 TIMES                                                               
+E IN COMM 1 TIMES                                                               
+I IN COMM 0 TIMES                                                               
+O IN COMM 0 TIMES                                                               
+U IN COMM 0 TIMES                                                               
+TABLE NAME---> 		CDATE                                                          
+TABLE LENGTH->		5                                                               
+------------------------------                                                  
+A IN CDATE 1 TIMES                                                              
+E IN CDATE 1 TIMES                                                              
+I IN CDATE 0 TIMES                                                              
+O IN CDATE 0 TIMES                                                              
+U IN CDATE 0 TIMES                                                              
+TABLE NAME---> 		CUST_SPY                                                       
+TABLE LENGTH->		8                                                               
+------------------------------                                                  
+A IN CUST_SPY 0 TIMES                                                           
+E IN CUST_SPY 1 TIMES                                                           
+I IN CUST_SPY 0 TIMES                                                           
+O IN CUST_SPY 0 TIMES                                                           
+U IN CUST_SPY 0 TIMES                                                           
+TABLE NAME---> 		STUD                                                           
+TABLE LENGTH->		4                                                               
+------------------------------                                                  
+A IN STUD 0 TIMES                                                               
+E IN STUD 1 TIMES                                                               
+I IN STUD 0 TIMES                                                               
+O IN STUD 0 TIMES                                                               
+U IN STUD 0 TIMES                                                               
+TABLE NAME---> 		MARKS                                                          
+TABLE LENGTH->		5                                                               
+------------------------------                                                  
+A IN MARKS 1 TIMES                                                              
+E IN MARKS 0 TIMES                                                              
+I IN MARKS 0 TIMES                                                              
+O IN MARKS 0 TIMES                                                              
+U IN MARKS 0 TIMES                                                              
+TABLE NAME---> 		RESULT                                                         
+TABLE LENGTH->		6                                                               
+------------------------------                                                  
+A IN RESULT 0 TIMES                                                             
+E IN RESULT 1 TIMES                                                             
+I IN RESULT 0 TIMES                                                             
+O IN RESULT 0 TIMES                                                             
+U IN RESULT 0 TIMES                                                             
+TABLE NAME---> 		SALESMAN                                                       
+TABLE LENGTH->		8                                                               
+------------------------------                                                  
+A IN SALESMAN 2 TIMES                                                           
+E IN SALESMAN 1 TIMES                                                           
+I IN SALESMAN 0 TIMES                                                           
+O IN SALESMAN 0 TIMES                                                           
+U IN SALESMAN 0 TIMES                                                           
+TABLE NAME---> 		CUSTOMER                                                       
+TABLE LENGTH->		8                                                               
+------------------------------                                                  
+A IN CUSTOMER 0 TIMES                                                           
+E IN CUSTOMER 2 TIMES                                                           
+I IN CUSTOMER 0 TIMES                                                           
+O IN CUSTOMER 0 TIMES                                                           
+U IN CUSTOMER 0 TIMES                                                           
+TABLE NAME---> 		ORDERS                                                         
+TABLE LENGTH->		6                                                               
+------------------------------                                                  
+A IN ORDERS 0 TIMES                                                             
+E IN ORDERS 2 TIMES                                                             
+I IN ORDERS 0 TIMES                                                             
+O IN ORDERS 0 TIMES                                                             
+U IN ORDERS 0 TIMES                                                             
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF;

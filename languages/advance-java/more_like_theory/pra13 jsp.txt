@@ -1,0 +1,25 @@
+<%-- 
+    Document   : pra13
+    Created on : 11 Aug, 2016, 2:08:47 PM
+    Author     : Student
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Practical - 13</h1>
+       <% 
+        int i,s=0;
+        for(i=1;i<=100;i++)
+        {
+          s = s+i;
+          }
+        out.println("sum = " +s);
+        %>
+    </body>
+</html>

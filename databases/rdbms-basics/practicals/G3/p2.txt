@@ -1,0 +1,104 @@
+
+CREATE TABLE EMP
+(E_NO NUMBER(3) PRIMARY KEY,
+NAME VARCHAR2(20),
+ADDRESS VARCHAR2(40),
+CITY VARCHAR2(20));
+
+
+CREATE TABLE SALARY
+(E_NO NUMBER(3) REFERENCES EMP(E_NO),
+BASIC NUMBER(8,2),
+TA NUMBER(8,2),
+DA NUMBER(8,2),
+HRA NUMBER(8,2),
+OTH_A NUMBER(8,2),
+IT NUMBER(8,2),
+LOAN NUMBER(8,2),
+PRO_TXT NUMBER(8,2),
+OTH_D NUMBER(8,2));
+
+
+CREATE TABLE NETPAY
+(E_NO NUMBER(3) REFERENCES EMP(E_NO),
+TOT_A  NUMBER(8,2),
+TOT_D  NUMBER(8,2),
+NET_PAY NUMBER(8,2),
+MONTH  NUMBER(2));
+
+
+INSERT INTO EMP
+VALUES
+(&E_NO,'&NAME','&ADDRESS','&CITY');
+
+
+INSERT INTO SALARY (E_NO, BASIC) VALUES
+(&E_NO,&BASIC);
+
+
+
+declare
+
+cursor c1 is select * from salary;
+rec c1%rowtype;
+ta1 number(9,2);
+da1 number(9,2);
+hra1 number(9,2);
+oth_a1 number(9,2);
+loan1 number(9,2);
+pro_txt1 number(9,2);
+oth_d1 number(9,2);
+it1 number(9,2);
+eno number(4);
+tot_all number(9,2);
+tot_ded number(9,2);
+net_pay number(9,2);
+month_of_pay number(2);
+
+ BEGIN
+   Open c1;
+   Loop
+   Fetch c1 into rec;
+   Exit when c1%notfound;
+   	eno:=rec.e_no;
+   if rec.basic>10000 then
+	
+	   ta1:=rec.basic*0.3;
+   else
+           ta1:=rec.basic*0.2;
+   end if;
+	if rec.basic>10000 then
+	
+	   	da1:=rec.basic*0.6;
+   	else
+          	 da1:=rec.basic*0.5;
+   	end if;
+
+	if rec.basic>10000 then
+	
+	   	hra1:=7000;
+   	else
+          	 hra1:=5000;
+   	end if;
+	if rec.basic>10000 then
+	
+	   	oth_a1:=rec.basic*0.2;
+   	else
+          	 oth_a1:=rec.basic*0.1;
+   	end if;
+	
+	loan1:=10000;
+	pro_txt1:=500;
+	oth_d1:=200;
+	it1:=rec.basic*0.1;
+	tot_all:=ta1+da1+hra1+oth_a1;
+	tot_ded:=it1+loan1+pro_txt1+oth_d1;
+	net_pay:=rec.basic+tot_all-tot_ded;
+	month_of_pay :=02;
+	update salary set ta=ta1,da=da1,hra=hra1,oth_a=oth_a1,
+	it=it1,pro_txt=pro_txt1,oth_d=oth_d1 where e_no=eno; 
+	insert into netpay values(rec.e_no,tot_all,tot_ded,
+	net_pay,month_of_pay );
+	end loop;
+end;
+u

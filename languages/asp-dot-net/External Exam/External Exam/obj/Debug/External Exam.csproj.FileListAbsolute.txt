@@ -1,0 +1,6 @@
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\bin\Debug\External Exam.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\bin\Debug\External Exam.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\bin\Debug\External Exam.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\obj\Debug\External Exam.csprojResolveAssemblyReference.cache
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\obj\Debug\External Exam.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\External Exam\External Exam\obj\Debug\External Exam.pdb

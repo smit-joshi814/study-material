@@ -1,0 +1,17 @@
+;;; 
+Import: Release 11.2.0.2.0 - Production on Tue Apr 19 09:43:27 2022
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Master table "SYS"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "SYS"."SYS_IMPORT_FULL_01":  /******** AS SYSDBA DIRECTORY=DATAPUMP DUMPFILE='EXP_SCHEMA.DMP' LOGFILE='IMP_ECHEMA.LOG' REMAP_TABLE='STUDENTS:STUDENT' REMAP_SCHEMA='TEST:DEMO' 
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "DEMO"."STUDENT"                            5.578 KB      10 rows
+Job "SYS"."SYS_IMPORT_FULL_01" successfully completed at 09:43:32

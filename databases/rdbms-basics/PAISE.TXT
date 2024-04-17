@@ -1,0 +1,8 @@
+SQL> SELECT TO_CHAR(TO_DATE(TRUNC(12.52),'J'),'JSP')||' INR RUPEES AND '||TO_CHAR(TO_DATE(SUBSTR(12.52,INSTR(12.52,'.')+1),'J'),'JSP')||' PAIESE'  FROM DUAL;
+
+TO_CHAR(TO_DATE(TRUNC(12.52),'J'),'JSP                                          
+--------------------------------------                                          
+TWELVE INR RUPEES AND FIFTY-TWO PAIESE                                          
+
+SQL> SPOOL OFF;
+	

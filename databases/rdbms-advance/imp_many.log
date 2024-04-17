@@ -1,0 +1,60 @@
+Username: 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing SMIT's objects into TEST
+. . importing table                     "CUSTOMER"         15 rows imported
+. . importing table                         "STUD"         10 rows imported
+IMP-00017: following statement failed with ORACLE error 4098:
+ "ALTER TABLE "CUSTOMER" ADD FOREIGN KEY ("SNUM") REFERENCES "SALESMAN" ("SNU"
+ "M") ENABLE"
+IMP-00003: ORACLE error 4098 encountered
+ORA-04098: trigger 'SYSTEM.ERR' is invalid and failed re-validation
+ORA-02298: cannot validate (TEST.SYS_C007368) - parent keys not found
+IMP-00041: Warning: object created with compilation warnings
+ "CREATE TRIGGER "TEST".CUST_SPY"
+ "AFTER INSERT OR DELETE OR UPDATE ON CUSTOMER"
+ "DECLARE"
+ "OP VARCHAR(10);"
+ "BEGIN"
+ "IF (INSERTING=TRUE) THEN"
+ "OP:='INSERT';"
+ "ELSIF (UPDATING=TRUE) THEN"
+ "OP:='UPDATE';"
+ "ELSE"
+ "OP:='DELETE';"
+ "END IF;"
+ "INSERT INTO CUST_SPY VALUES(USER,SYSDATE,TO_CHAR(SYSDATE,'HH24:MM'),OP);"
+ ""
+ "END;"
+IMP-00041: Warning: object created with compilation warnings
+ "CREATE TRIGGER "TEST".CHK_NAME"
+ "BEFORE INSERT OR UPDATE ON CUSTOMER"
+ "FOR EACH ROW"
+ "DECLARE"
+ "I NUMBER;"
+ "C NUMBER;"
+ "CH VARCHAR2;"
+ "BEGIN"
+ "FOR I IN 1..LENGTH(:NEW.CNAME)"
+ "LOOP"
+ ""
+ ":NEW.CNAME:=(UPPER(:NEW.CNAME));--TO UPPERCASE"
+ "CH:=SUBSTR(:NEW.CNAME,I,1);"
+ ""
+ "IF(CH IN('A','E','I','O','U')) THEN"
+ "C:=C+1;"
+ "END IF;"
+ ""
+ "END LOOP;"
+ ""
+ "IF(C=0) THEN"
+ ""
+ "RAISE_APPLICATION_ERROR(-20611,'INCORRECT NAME');"
+ ""
+ "END IF;"
+ ""
+ "END CHK_NAME;"
+Import terminated successfully with warnings.

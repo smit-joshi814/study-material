@@ -1,0 +1,9 @@
+F:\SMIT\pr3\pr3\bin\Debug\pr3.exe.config
+F:\SMIT\pr3\pr3\bin\Debug\pr3.exe
+F:\SMIT\pr3\pr3\bin\Debug\pr3.pdb
+F:\SMIT\pr3\pr3\obj\Debug\pr3.csprojResolveAssemblyReference.cache
+F:\SMIT\pr3\pr3\obj\Debug\pr3.exe
+F:\SMIT\pr3\pr3\obj\Debug\pr3.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr3\pr3\bin\Debug\pr3.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr3\pr3\obj\Debug\pr3.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr3\pr3\obj\Debug\pr3.pdb

@@ -1,0 +1,32 @@
+/* Function */
+
+create or replace function fact(n in out number) return number is
+ans number:=1;
+begin
+	while(n!=0)
+	loop
+		ans:=ans*n;
+		n:=n-1;
+	end loop;
+return ans;
+end fact;
+  
+
+
+
+/* Calling */
+declare
+ans number;
+n number;
+begin
+	n:=&n;
+	ans:=fact(n);
+	dbms_output.put_line('Factorial of '|| n ||' is '|| ans);
+end;
+
+/*************
+why n =0 
+question solved it's not an error when we pass value to an procedure or function
+it's the whole variavle (we will pass reference of variable)
+then the value we get back by procedure will be modifided 
+and that's why we get N=0 after calling the procedure fact.

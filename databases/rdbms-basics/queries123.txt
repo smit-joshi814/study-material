@@ -1,0 +1,63 @@
+SQL> select onum,amount,odate from orders;
+
+      ONUM     AMOUNT ODATE                                                     
+---------- ---------- ---------                                                 
+      3001      18.69 03-MAR-99                                                 
+      3002     767.19 05-MAR-97                                                 
+      3003     1900.1 10-MAR-97                                                 
+      3004    5160.45 12-MAR-99                                                 
+      3005    1098.25 15-APR-99                                                 
+      3006    1713.12 10-APR-95                                                 
+      3007      75.75 20-MAY-96                                                 
+      3008       4723 30-MAY-99                                                 
+      3009    1309.95 08-MAY-97                                                 
+      3010    9898.87 06-JUN-99                                                 
+
+10 rows selected.
+
+SQL> select * from customer where snum=1001;
+
+      CNUM CNAME                CITY                     RATING       SNUM      
+---------- -------------------- -------------------- ---------- ----------      
+      2001 HARDIK               LONDON                      100       1001      
+      2005 CHANDRESH            LONDON                      100       1001      
+
+SQL> select city,sname,snum,commition from salesman;
+
+CITY                 SNAME                      SNUM  COMMITION                 
+-------------------- -------------------- ---------- ----------                 
+LONDON               PIYUSH                     1001         12                 
+SURAT                NIRAJ                      1002         13                 
+LONDON               MITI                       1003         11                 
+BARODA               RAJESH                     1004         15                 
+NEW DELHI            ANAND                      1005         10                 
+PATAN                RAM                        1006         10                 
+BOMBAY               LAXMAN                     1007          9                 
+
+7 rows selected.
+
+SQL> select cname,rating from customer where city='SURAT';
+
+CNAME                    RATING                                                 
+-------------------- ----------                                                 
+LAXIT                       200                                                 
+CHAMPAK                     300                                                 
+
+SQL> select snum,amount from orders;
+
+      SNUM     AMOUNT                                                           
+---------- ----------                                                           
+      1007      18.69                                                           
+      1001     767.19                                                           
+      1004     1900.1                                                           
+      1002    5160.45                                                           
+      1007    1098.25                                                           
+      1003    1713.12                                                           
+      1002      75.75                                                           
+      1001       4723                                                           
+      1002    1309.95                                                           
+      1001    9898.87                                                           
+
+10 rows selected.
+
+SQL> spool off;

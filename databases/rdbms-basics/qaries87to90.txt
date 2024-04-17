@@ -1,0 +1,142 @@
+SQL> ALTER TABLE ORDERS ADD ITEM_NAME VARCHAR2(20);
+
+Table altered.
+
+SQL> SELECT *FROM ORDERS;
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM ITEM_NAME                 
+---------- ---------- --------- ---------- ---------- --------------------      
+      3001      18.69 03-MAR-99       2007       1007                           
+      3002     767.19 05-MAR-97       2001       1001                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3004    5160.45 12-MAR-99       2003       1002                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3007      75.75 20-MAY-96       2004       1002                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+10 rows selected.
+
+SQL> ALTER TABLE ORDERS DROP COLUMN ITEM_NAME;
+
+Table altered.
+
+SQL> SELECT *FROM ORDERS;
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3001      18.69 03-MAR-99       2007       1007                           
+      3002     767.19 05-MAR-97       2001       1001                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3004    5160.45 12-MAR-99       2003       1002                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3007      75.75 20-MAY-96       2004       1002                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+10 rows selected.
+
+SQL> CREATE TABLE ORDERS1 AS SELECT *FROM ORDERS;
+
+Table created.
+
+SQL> SELECT *FROM ORDERS;
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3001      18.69 03-MAR-99       2007       1007                           
+      3002     767.19 05-MAR-97       2001       1001                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3004    5160.45 12-MAR-99       2003       1002                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3007      75.75 20-MAY-96       2004       1002                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+10 rows selected.
+
+SQL> SELECT *FROM ORDERS1;
+
+      ONUM     AMOUNT ODATE           CNUM       SNUM                           
+---------- ---------- --------- ---------- ----------                           
+      3001      18.69 03-MAR-99       2007       1007                           
+      3002     767.19 05-MAR-97       2001       1001                           
+      3003     1900.1 10-MAR-97       2007       1004                           
+      3004    5160.45 12-MAR-99       2003       1002                           
+      3005    1098.25 15-APR-99       2008       1007                           
+      3006    1713.12 10-APR-95       2002       1003                           
+      3007      75.75 20-MAY-96       2004       1002                           
+      3008       4723 30-MAY-99       2006       1001                           
+      3009    1309.95 08-MAY-97       2004       1002                           
+      3010    9898.87 06-JUN-99       2006       1001                           
+
+10 rows selected.
+
+SQL> DROP TABLE ORDERS1;
+
+Table dropped.
+
+SQL> CREATE TABLE SALES (SNUM NUMBER(4) PRIMARY KEY,SNAME CHAR(20),CITY CHAR(20),COMMITION NUMBER(2) DEFAULT 10 NOT NULL);
+
+Table created.
+
+SQL> SELECT *FROM SALES;
+
+no rows selected
+
+SQL> INSERT INTO SALES VALUES(&SNUM,'&SNAME','&CITY',&COMMITION);
+Enter value for snum: 2001
+Enter value for sname: SMIT
+Enter value for city: DEESA
+Enter value for commition: 20
+old   1: INSERT INTO SALES VALUES(&SNUM,'&SNAME','&CITY',&COMMITION)
+new   1: INSERT INTO SALES VALUES(2001,'SMIT','DEESA',20)
+
+1 row created.
+
+
+SQL> SELECT *FROM SALES;
+
+      SNUM SNAME                CITY                  COMMITION                 
+---------- -------------------- -------------------- ----------                 
+      2001 SMIT                 DEESA                        20                 
+
+
+1 row deleted.
+
+SQL> INSERT INTO SALES (SNUM,SNAME,CITY) VALUES(2002,'KHUSH','PATAN');
+
+1 row created.
+
+
+SQL> SELECT *FROM SALES;
+
+      SNUM SNAME                CITY                  COMMITION                 
+---------- -------------------- -------------------- ----------                 
+      2001 SMIT                 DEESA                        20                 
+      2002 KHUSH     	          PATAN                        10                 
+
+
+
+
+SQL> CREATE TABLE SALESMAN2 (SNUM NUMBER(4) PRIMARY KEY,SNAME VARCHAR2(20) NOT NULL,CITY VARCHAR2(20) NOT NULL,COMMITION NUMBER(2) NOT NULL);
+
+Table created.
+
+
+SQL> CREATE TABLE CUSTOMER2 (CNUM NUMBER(4) PRIMARY KEY,CNAME VARCHAR2(20) NOT NULL ,CITY VARCHAR(20) NOT NULL,RATING NUMBER(3) NOT NULL,SNUM NUMBER(3) REFERENCES SALESMAN(SNUM));
+
+Table created.
+
+
+SQL> CREATE TABLE ORDERS2 (ONUM NUMBER(4) PRIMARY KEY,AMOUNT NUMBER(6,2) NOT NULL,ODATE DATE NOT NULL,CNUM NUMBER(4) REFERENCES CUSTOMER(CNUM),SNUM NUMBER(4) REFERENCES SALESMAN(SNUM));
+
+Table created.
+
+SQL> SPOOL OFF;

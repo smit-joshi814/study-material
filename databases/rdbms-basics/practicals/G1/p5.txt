@@ -1,0 +1,20 @@
+DECLARE
+  sum1 number:=0;
+  n1 number:=0;
+  n2 number;
+  n3 number;
+  I number;
+BEGIN
+  n1:=&n1;
+  n2:=&n2;
+  n3:=&n3;
+	
+  For I in n1..n2
+  Loop
+	if(I mod n3 = 0) then
+		sum1:=sum1+I;
+	end if;
+  End loop;
+  Dbms_output.put_line('Sum of odd Nos is=       '  || sum1);
+ end;
+

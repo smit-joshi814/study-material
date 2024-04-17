@@ -1,0 +1,101 @@
+<%-- 
+    Document   : p11
+    Created on : 30 Aug, 2016, 11:29:05 AM
+    Author     : Student
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.sql.*"%>
+<!DOCTYPE html>
+<%!
+      Connection con=null;
+      Statement st=null;
+      ResultSet rs=null;
+%>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <%
+            try{
+              Class.forName("oracle.jdbc.driver.OracleDriver");
+              con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger");
+             out.println("Connection OK....");
+              st=con.createStatement();
+            }catch(Exception e){out.println(e);}
+            
+            if(request.getParameter("txtSNo")!=null)
+            {
+              //  out.println(request.getParameter("btnOp"));
+               String op=request.getParameter("btnOp");
+               if(op.equals("Insert"))
+               {
+                  try{ 
+                   String sql="insert into stud values(" 
+                + request.getParameter("txtSNo") + ",'" 
+                + request.getParameter("txtSName")
+                + "')";
+     //   System.out.println(sql);
+        st.executeUpdate(sql);
+         // JOptionPane.showMessageDialog(null, "Record is instered...");
+      }catch(Exception e){out.println(e);}
+               }
+               else
+                if(op.equals("Update"))
+                 {
+                   try{ 
+                   String sql="update stud set sname='"                 
+                + request.getParameter("txtSName")
+                + "' where sno=" + request.getParameter("txtSNo");
+     //   System.out.println(sql);
+        st.executeUpdate(sql);
+         // JOptionPane.showMessageDialog(null, "Record is instered...");
+      }catch(Exception e){out.println(e);}
+                 }
+               else
+               {
+                  try{ 
+                   String sql="delete from stud where sno="
+                           + request.getParameter("txtSNo");
+     //   System.out.println(sql);
+        st.executeUpdate(sql);
+         // JOptionPane.showMessageDialog(null, "Record is instered...");
+      }catch(Exception e){out.println(e);}
+               }
+            }
+        %>
+        <h1>Practical - 11</h1>
+        <form>
+          <table>
+            <tr>
+                <td colspan="2">Enter SNo:</td>
+                <td colspan="2"><input type="text" name="txtSNo"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Enter SName:</td>
+                <td colspan="2"><input type="text" name="txtSName"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Insert" name="btnOp"></td>
+                <td><input type="submit" value="Update" name="btnOp"></td>
+                <td><input type="submit" value="Delete" name="btnOp"></td>                
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        </form>
+        <hr>
+        <%
+             String sql="select * from stud";
+             rs=st.executeQuery(sql);
+             out.println("<table>");
+             out.println("<tr><th>SNo</th><th>SName</th></tr>");
+             while(rs.next())
+             {
+              out.println("<tr><td>" + rs.getString(1) + "</td>");
+              out.println("<td>" + rs.getString(2) + "</td></tr>");
+             }
+             out.println("</table>");
+        %>
+    </body>
+</html>

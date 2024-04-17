@@ -1,0 +1,37 @@
+declare
+i number:=0;
+j number:=0;
+no number:=0;
+a number:=0;
+k number:=0;
+begin
+
+ for i in 1..1000
+ loop
+ if k=100 then
+	end;
+ end if;
+
+ no:=0;
+
+ a:=i-1;
+ for j in 2..a
+	loop
+  if (mod( i,j)=0)  then
+   no:=1;
+   exit;
+  end if;
+ end loop;
+if(no=0) then
+ dbms_output.put_line(k+1||' Prime no is ==>  '||i);
+ k:=k+1;
+
+end if;
+ end loop;
+
+end;
+/
+
+
+
+

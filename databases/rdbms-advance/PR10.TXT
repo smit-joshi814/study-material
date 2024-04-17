@@ -1,0 +1,11 @@
+SQL> SELECT 'DROP TABLE '||OBJECT_NAME||';' FROM DBA_OBJECTS WHERE OBJECT_TYPE='TABLE' AND OWNER='TEMPAR';
+
+'DROPTABLE'||OBJECT_NAME||';'                                                   
+--------------------------------------------------------------------------------
+DROP TABLE T1;                                                                  
+DROP TABLE T2;                                                                  
+DROP TABLE T3;                                                                  
+
+3 rows selected.
+
+SQL> SPOOL OFF;

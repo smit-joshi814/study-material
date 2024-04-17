@@ -1,0 +1,80 @@
+CREATE TABLE STUD
+(S_NO NUMBER(3) PRIMARY KEY,
+NAME VARCHAR2(15),
+ADDRESS VARCHAR2(20),
+CITY VARCHAR2(15));
+
+
+CREATE TABLE MARKS
+(S_NO NUMBER(3) REFERENCES STUD(S_NO),
+SUB1 NUMBER(3),
+SUB2 NUMBER(3),
+SUB3 NUMBER(3),
+SUB4 NUMBER(3));
+
+
+CREATE TABLE RESULT
+(S_NO NUMBER(3) REFERENCES STUD(S_NO),
+TOTAL NUMBER(3),
+PERC NUMBER(5,2),  
+CLASS VARCHAR2(15));
+
+
+INSERT INTO STUD
+VALUES
+(&S_NO,'&NAME','&ADDRESS','&CITY');
+
+
+INSERT INTO MARKS
+VALUES
+(&S_NO,&SUB1,&SUB2,&SUB3,&SUB4);
+
+  
+ DECLARE
+   Cursor c1 is select * from marks;
+   Rec c1%rowtype;
+   tot number;
+   per number(5,2);
+   class varchar2(10);
+   co number:=0;
+  BEGIN
+   Open c1;
+   Loop
+   Fetch c1 into rec;
+   Exit when c1%notfound;
+   tot:=rec.sub1+rec.sub2+rec.sub3+rec.sub4;
+   per:=tot/4;
+   if(rec.sub1>35 and rec.sub2>35 and rec.sub3>35 and rec.sub4>35) then
+    if(per>70) then
+            class:='Dist';
+    elsif(per>60) then
+            class:='First';
+    elsif(per>50) then
+            class:='Second';
+     else
+            class:='Pass';
+    end if;
+ else
+    if(rec.sub1<35) then
+            co:=co+1;
+    end if;
+    if(rec.sub2<35) then
+            co:=co+1;
+    end if;
+    if(rec.sub3<35) then
+            co:=co+1;
+    end if;
+    if(rec.sub4<35) then
+            co:=co+1;
+    end if;
+    if(co<2) then
+            class:='A.T.K.T';
+    else
+            class:='Fail';
+    end if;
+ end if;
+ 
+ insert into result values(rec.s_no,tot,per,class);
+   End loop;
+   End ;
+/

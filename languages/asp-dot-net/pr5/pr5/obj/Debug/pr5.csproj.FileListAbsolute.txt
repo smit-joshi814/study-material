@@ -1,0 +1,12 @@
+F:\SMIT\pr5\pr5\bin\Debug\pr5.exe.config
+F:\SMIT\pr5\pr5\obj\Debug\pr5.csprojResolveAssemblyReference.cache
+F:\SMIT\pr5\pr5\bin\Debug\pr5.exe
+F:\SMIT\pr5\pr5\bin\Debug\pr5.pdb
+F:\SMIT\pr5\pr5\obj\Debug\pr5.exe
+F:\SMIT\pr5\pr5\obj\Debug\pr5.pdb
+F:\DOTNET\pr5\pr5\bin\Debug\pr5.exe.config
+F:\DOTNET\pr5\pr5\obj\Debug\pr5.exe
+F:\DOTNET\pr5\pr5\obj\Debug\pr5.pdb
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5\pr5\bin\Debug\pr5.exe.config
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5\pr5\obj\Debug\pr5.exe
+D:\LEARNING\COLLAGE\SAM5\503\PRACTICALS\pr5\pr5\obj\Debug\pr5.pdb

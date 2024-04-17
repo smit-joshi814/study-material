@@ -1,0 +1,53 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Fri Apr 22 13:35:50 2022
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Starting "SYS"."SYS_EXPORT_SCHEMA_01":  /******** AS SYSDBA directory=DATAPUMP DUMPFILE=EXP_USR_SMIT.DMP LOGFILE=EXP_USR_SMIT.LOG SCHEMAS=SMIT 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 896 KB
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/FUNCTION/FUNCTION
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PACKAGE/COMPILE_PACKAGE/PACKAGE_SPEC/ALTER_PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/FUNCTION/ALTER_FUNCTION
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_BODY
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+. . exported "SMIT"."BONUS"                              5.601 KB      10 rows
+. . exported "SMIT"."CUSTOMER"                           7.562 KB      15 rows
+. . exported "SMIT"."CUST_SPY"                           6.687 KB      17 rows
+. . exported "SMIT"."DAY_TOTAL"                          5.562 KB      10 rows
+. . exported "SMIT"."LONDONSTAFF"                        6.335 KB       2 rows
+. . exported "SMIT"."MARKS"                              6.945 KB      10 rows
+. . exported "SMIT"."MULTICUST"                          6.476 KB       8 rows
+. . exported "SMIT"."MULTICUST1"                         6.367 KB       3 rows
+. . exported "SMIT"."ORDERS"                             7.445 KB      10 rows
+. . exported "SMIT"."RESULT"                             6.976 KB      10 rows
+. . exported "SMIT"."SALESMAN"                           6.476 KB       8 rows
+. . exported "SMIT"."SALESMANAGER"                       6.335 KB       2 rows
+. . exported "SMIT"."STUD"                               6.523 KB      10 rows
+. . exported "SMIT"."TEST"                               5.570 KB      10 rows
+. . exported "SMIT"."CDATE"                                  0 KB       0 rows
+. . exported "SMIT"."COMM"                                   0 KB       0 rows
+. . exported "SMIT"."SALES"                                  0 KB       0 rows
+. . exported "SMIT"."SMCITY"                                 0 KB       0 rows
+Master table "SYS"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYS.SYS_EXPORT_SCHEMA_01 is:
+  D:\LEARNING\COLLAGE\SAM4\405\IMPEXP\DP\EXP_USR_SMIT.DMP
+Job "SYS"."SYS_EXPORT_SCHEMA_01" successfully completed at 13:36:34

@@ -1,0 +1,11 @@
+DECLARE
+  Sum1 number:=0;
+  I number;
+BEGIN
+  For I in 1..100
+  Loop
+  Sum1:=sum1+I;
+  End loop;
+  Dbms_output.put_line('the answeris=  '  ||  '    ' || sum1);
+  End;
+/

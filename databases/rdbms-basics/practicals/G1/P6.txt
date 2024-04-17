@@ -1,0 +1,26 @@
+DECLARE
+
+  N1 number;
+  N2 number;
+  N3 number;
+  Sum1 number:=0;
+  i number;
+
+BEGIN
+
+  N1:=&n1;
+  N2:=&n2;
+  N3:=&n3;
+
+ For I in n1..n2
+
+ Loop
+
+ 	If(I mod n3=0) then
+ 
+ 		Sum1:=sum1+I;
+ 	End if;
+ End loop;
+             Dbms_output.put_line('the answer is=  '  ||  '    ' || sum1);
+ End;
+/

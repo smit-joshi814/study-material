@@ -1,5 +1,6 @@
-
-# puts "Value of A is: #{a} & B is: #{b}"  # after printing /n
+a = 10
+b = 20
+puts "Value of A is: #{a} & B is: #{b}"  # after printing /n
 # printf("Hello")  # print() & printf() prints in single line
 
 # eample of multimine comments
@@ -12,7 +13,3 @@ this is multiline comment block
 # nested if - 2 program
 # switch 2 program
 # loop - 3 program
-
-
-
-

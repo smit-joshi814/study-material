@@ -1,0 +1,29 @@
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+<div>
+ <a href="/quotes/new" class="btn btn-primary mb-3">add new Quote</a>
+</div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <% @quotes.each do |quote| %>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text"><%=quote.content%></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/quotes/<%=quote.id%>" class="btn btn-sm btn-outline-secondary">View</a>
+                  <a href="/quotes/<%=quote.id%>/edit" class="btn btn-sm btn-outline-secondary">Edit</a>
+                </div>
+                <small class="text-body-secondary"><%=quote.created_at.to_date%></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <% end %>
+
+      </div>
+    </div>
+  </div>

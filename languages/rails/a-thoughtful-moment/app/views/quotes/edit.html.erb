@@ -1,6 +1,7 @@
-<div class="row ">
-<h1 class="text-center mt-3 mb-3">Update Quote</h1>
-<div class="d-flex justify-content-center">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<h1 class="mt-3 mb-3">Update Quote</h1>
 <%= form_with model:@quote do |form| %>
     <div class="mb-3">
         <%=form.label :content , class:'form-label'%>
@@ -15,4 +16,8 @@
     </div>
 <%end%>
     </div>
+    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <img class="img-fluid border border-primary border-2 shadow" src="<%=@quote.image%>">
+    </div>
+</div>
 </div>

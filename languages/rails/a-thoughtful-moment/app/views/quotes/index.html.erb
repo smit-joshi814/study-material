@@ -13,8 +13,12 @@
               <p class="card-text"><%=quote.content%></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="/quotes/<%=quote.id%>" class="btn btn-sm btn-outline-secondary">View</a>
-                  <a href="/quotes/<%=quote.id%>/edit" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  <%= link_to 'view' , quote, class:'btn btn-sm btn-outline-primary'%>
+                  <%= link_to 'edit' , edit_quote_path(quote), class:'btn btn-sm btn-outline-secondary'%>
+                  <%= link_to "delete", quote_path(quote), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                    },class:'btn btn-sm btn-outline-danger' %>
                 </div>
                 <small class="text-body-secondary"><%=quote.created_at.to_date%></small>
               </div>

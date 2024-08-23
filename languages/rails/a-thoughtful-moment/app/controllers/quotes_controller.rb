@@ -33,5 +33,6 @@ class QuotesController < ApplicationController
   def destroy
     @quote = Quote.find(params[:id])
     @quote.destroy
+    redirect_to root_path, status: :see_other
   end
 end
